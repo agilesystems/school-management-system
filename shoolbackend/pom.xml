@@ -3,16 +3,21 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.agile</groupId>
-  <artifactId>shoolbackend</artifactId>
+  <artifactId>schoolbackend</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>shoolbackend</name>
+  <name>schoolbackend</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.version>4.3.7.RELEASE</spring.version>
   </properties>
+
+
+
+
 
   <dependencies>
     <dependency>
@@ -21,6 +26,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- Sprin -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
   </dependencies>
   
   <build>

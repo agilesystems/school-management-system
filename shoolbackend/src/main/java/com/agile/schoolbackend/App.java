@@ -1,4 +1,4 @@
-package com.agile.shoolbackend;
+package com.agile.schoolbackend;
 
 /**
  * Hello world!
