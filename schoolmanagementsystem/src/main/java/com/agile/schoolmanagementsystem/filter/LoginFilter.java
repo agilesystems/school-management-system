@@ -42,11 +42,11 @@ public class LoginFilter implements Filter {
 
 		
 		HttpServletRequest request = (HttpServletRequest) req;
-		
+	
 		String path = request.getRequestURI();
 		HttpSession session = request.getSession();	
 		System.out.println(path+"session is :"+(session==null)) ;
-		if (path.startsWith(pathToBeIgnored)) {
+		if (path.startsWith(request.getContextPath()+pathToBeIgnored)) {
 		    chain.doFilter(req, res); // Just continue chain.
 		} else {
 		    
